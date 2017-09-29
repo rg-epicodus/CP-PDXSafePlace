@@ -15,7 +15,7 @@ Table of contents
   * [License](#license)
 
 ### Project Info
-
+  ![Screenshot](screenshot01.png)
   Repository for Information about Project
 
 ### Documentation
@@ -39,7 +39,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 | Behavior      | Example Input         | Example Output        |
 | ------------- | ------------- | ------------- |
-|   |  |  |
+| user wants to locate a safe place to stay  | button click on item | safe place displayed |
 
 ## Known Bugs
 
