@@ -1,8 +1,10 @@
-import { ModuleWithProviders }  from '@angular/core';
+import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SafeplaceComponent } from './safeplace/safeplace.component';
 import { AboutComponent } from './about/about.component';
+import { ResourceDetailComponent } from './resource-detail/resource-detail.component';
+
 const appRoutes: Routes = [
   {
     path: '',
@@ -12,12 +14,15 @@ const appRoutes: Routes = [
     path: 'about',
     component: AboutComponent
   },
-
   {
     path: 'safeplace',
     component: SafeplaceComponent
-  }
-]
+  },
+  {
+  path: 'resources/:id',
+  component: ResourceDetailComponent
+}
+];
 
 
 

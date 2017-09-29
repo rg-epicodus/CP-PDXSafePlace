@@ -7,10 +7,18 @@ export class ResourceService {
   resources: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-    this.resources = database.list('resources')
+    this.resources = database.list('resources');
   }
 
-  getResources(){
+  getResources() {
     return this.resources;
+  }
+
+  addResource(newResource: Resource) {
+    this.resources.push(newResource);
+  }
+
+  getResourceById(resourceId: string) {
+    return this.database.object('/resources/' + resourceId);
   }
 }
