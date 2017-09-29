@@ -1,6 +1,6 @@
 # PDXSafePlace Project Information
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+Too many times there are people that suffer from Domestic Violence that are, among other forms of abuse, suffering Financial Abuse. They are unable to leave the violent situation because they are the caregiver of the family and are unable to leave.
 
 Table of contents
 =================
