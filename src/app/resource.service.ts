@@ -21,4 +21,11 @@ export class ResourceService {
   getResourceById(resourceId: string) {
     return this.database.object('/resources/' + resourceId);
   }
+
+  updateResource(updatedResource){
+    var resourceItem = this.getResourceById(updatedResource.$key);
+    resourceItem.update({title: updatedResource.name,
+                                artist: updatedResource.type,
+                                description: updatedResource.description});
+  }
 }
