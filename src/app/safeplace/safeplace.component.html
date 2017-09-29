@@ -1,3 +1,9 @@
-<h2>Safe Place</h2>
+<h2>Resources</h2>
 
-<p>All our places will be listed here shortly!</p>
+<div *ngFor="let resource of resources | async" class="panel panel-default">
+  <div class="panel-body">
+    <h3>{{resource.name}}</h3>
+    <h5>{{resource.type}}</h5>
+    <h5>{{resource.description}}</h5>
+  </div>
+</div>

@@ -10,4 +10,7 @@ export class ResourceService {
     this.resources = database.list('resources')
   }
 
+  getResources(){
+    return this.resources;
+  }
 }

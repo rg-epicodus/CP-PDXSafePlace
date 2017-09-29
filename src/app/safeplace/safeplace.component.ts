@@ -16,6 +16,8 @@ export class SafeplaceComponent implements OnInit {
   constructor(private router: Router, private resourceService: ResourceService) { }
 
   ngOnInit() {
+    this.resources = this.resourceService.getResources();
+
   }
 
 }
